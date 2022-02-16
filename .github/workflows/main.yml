@@ -1,8 +1,8 @@
 name: Builb Test and push
 on: [push]
 env:
-  IMAGE_NAME: student_service
-  REPO_NAME: swagger_service
+  IMAGE_NAME: tutorial
+  REPO_NAME: kaldoro
   
 
 
@@ -39,4 +39,5 @@ jobs:
 
     - name: Push image to docker hub Container Registry
       run: |
-        docker push $REPO_NAME/$IMAGE_NAME
+        docker tag swagger_server/student_service $REPO_NAME/$IMAGE_NAME
+          docker push $REPO_NAME/$IMAGE_NAME
