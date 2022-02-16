@@ -12,6 +12,7 @@ db_file_path = os.path.join(db_dir_path, "students.json")
 student_db = TinyDB(db_file_path)
 
 
+
 def add(student=None):
     queries = []
     query = Query()
