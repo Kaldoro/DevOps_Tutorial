@@ -39,5 +39,4 @@ jobs:
 
     - name: Push image to docker hub Container Registry
       run: |
-        docker tag swagger_server/student_service $REPO_NAME/$IMAGE_NAME
-          docker push $REPO_NAME/$IMAGE_NAME
+        docker push $REPO_NAME/$IMAGE_NAME
